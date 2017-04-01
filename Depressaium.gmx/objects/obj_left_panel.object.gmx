@@ -51,6 +51,62 @@ elem[1,2] = obj_stone_tower
         </arguments>
       </action>
     </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (hide == 1)
+{
+    for (var i = 0; i &lt; items_on_page; i++)
+    {
+        if mouse_check_button_pressed(mb_left)
+        {
+            var spr_x = x+sprite_get_width(spr_vgroup_tower)/2;
+            var spr_y = y+sprite_get_height(spr_vgroup_tower)/2+i*(sprite_get_height(spr_vgroup_tower)+margin+text_height);
+            if (mouse_x&gt;spr_x &amp;&amp; mouse_x&lt;spr_x+sprite_get_width(spr_vgroup_tower)
+            &amp;&amp; mouse_y&gt;spr_y &amp;&amp; mouse_y&lt;spr_y+sprite_get_width(spr_vgroup_tower))
+            {
+                obj = instance_create(mouse_x,mouse_y,elem[i,2])
+                obj.taken = true;
+                hide = 0;
+            }
+            
+        }
+    }
+}
+
+
+     /*   if (!instance_position(mouse_x, mouse_y, obj_road))
+        {
+            var inst;
+            var width = sprite_get_width(spr_vgroup_tower)
+            inst = collision_rectangle(mouse_x-width, mouse_y-width, mouse_x+width, mouse_y+width, obj_tower, false, true);
+            if (inst == noone)
+            {
+                if mouse_check_button_pressed(mb_left)
+                {
+                    instance_create(mouse_x,mouse_y, obj_vgroup_tower)
+                }
+            }
+        }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
