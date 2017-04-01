@@ -3,7 +3,7 @@
   <spriteName>spr_left_panel_background</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-999</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -53,7 +53,7 @@ instance_create(x + width ,y + 32,obj_menu_icon); // create object obj_menu_icon
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*if(hide == 0)
+            <string>if(hide == 0)
 {
     x = view_xview[0] - width
     y = view_yview[0]
@@ -63,7 +63,9 @@ else
     x = view_xview[0]
     y = view_yview[0]
 }
-*/
+obj_menu_icon.x = x+width
+obj_menu_icon.y = y+ sprite_get_height(spr_menu_icon)
+draw_self();
 
 </string>
           </argument>
