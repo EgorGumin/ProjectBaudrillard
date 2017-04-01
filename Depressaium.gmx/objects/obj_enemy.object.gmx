@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>spd = 10
-path_start(path_1, spd, path_action_stop, 1)
+path_start(global.path[3], spd, path_action_stop, 1)
 </string>
           </argument>
         </arguments>

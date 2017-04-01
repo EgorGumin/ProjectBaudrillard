@@ -12,9 +12,7 @@
   <backgrounds name="background">
     <background>background\tl_road</background>
   </backgrounds>
-  <paths name="paths">
-    <path>paths\path_1</path>
-  </paths>
+  <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\makeArr.gml</script>
   </scripts>
