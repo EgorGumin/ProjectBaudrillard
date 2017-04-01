@@ -31,6 +31,21 @@ y = 0
 hide = 0; // hide equal 0 is show, 1 is hide... when hide = 1 we will call the code and make the panel move to the left
 width = sprite_get_width(spr_left_panel_background); // get the width of obj_left_panel
 instance_create(x + width ,y + 32,obj_menu_icon); // create object obj_menu_icon right beside the panel
+
+elements_number = 2;
+items_on_page = 2;
+current_page = 1;
+max_page = elements_number/items_on_page + elements_number % items_on_page;
+margin = 16;
+text_height = 32;
+text_padding = 12;
+
+elem[0,0] = "Башня народной #дружины" 
+elem[0,1] = spr_vgroup_tower
+elem[0,2] = obj_vgroup_tower
+elem[1,0] ="Башня. Просто#башня"
+elem[1,1] = spr_stone_tower
+elem[1,2] = obj_stone_tower
 </string>
           </argument>
         </arguments>
@@ -67,6 +82,23 @@ obj_menu_icon.x = x+width
 obj_menu_icon.y = y+ sprite_get_height(spr_menu_icon)
 draw_self();
 
+
+if (hide == 1)
+{
+    for (var i = 0; i&lt; items_on_page; i++)
+    {
+        var spr_x = x+sprite_get_width(spr_vgroup_tower)/2;
+        var spr_y = y+sprite_get_height(spr_vgroup_tower)/2+i*(sprite_get_height(spr_vgroup_tower)+margin+text_height);
+        draw_sprite(elem[i,1],-1, spr_x , spr_y)
+        var text_x = spr_x - sprite_get_height(spr_vgroup_tower)/2 + text_padding;
+        var text_y = spr_y +  sprite_get_height(spr_vgroup_tower)/2
+        draw_set_font(f_arial_16)
+        draw_set_color(c_black)
+        draw_text(text_x, text_y, elem[i,0])
+        draw_set_color(c_white)
+        
+    }
+}
 </string>
           </argument>
         </arguments>

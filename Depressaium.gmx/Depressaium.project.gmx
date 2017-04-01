@@ -12,6 +12,7 @@
     <sprite>sprites\spr_enemy</sprite>
     <sprite>sprites\spr_castle</sprite>
     <sprite>sprites\spr_stone_tower</sprite>
+    <sprite>sprites\sprite6_test</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\tl_road</background>
@@ -20,6 +21,9 @@
   <scripts name="scripts">
     <script>scripts\makeArr.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\f_arial_16</font>
+  </fonts>
   <objects name="objects">
     <objects name="insterfacecont">
       <object>objects\obj_left_panel</object>
@@ -42,6 +46,7 @@
       <object>objects\obj_tower</object>
     </objects>
     <object>objects\obj_bullet</object>
+    <object>objects\obj_road</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
