@@ -5,14 +5,24 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\spr_tower</sprite>
+    <sprite>sprites\spr_enemy</sprite>
+  </sprites>
   <backgrounds name="background">
     <background>background\tl_road</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path_1</path>
+  </paths>
+  <scripts name="scripts">
+    <script>scripts\makeArr.gml</script>
+  </scripts>
   <objects name="objects">
-    <object>objects\object0</object>
+    <object>objects\obj_controller</object>
     <object>objects\obj_follow</object>
+    <object>objects\obj_tower</object>
+    <object>objects\obj_enemy</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

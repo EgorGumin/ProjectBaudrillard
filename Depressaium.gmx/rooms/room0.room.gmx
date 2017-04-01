@@ -3,8 +3,8 @@
   <caption></caption>
   <width>4000</width>
   <height>4500</height>
-  <vsnap>192</vsnap>
-  <hsnap>192</hsnap>
+  <vsnap>96</vsnap>
+  <hsnap>96</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -51,8 +51,17 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="object0" x="32" y="0" name="inst_7D0AFAAC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_controller" x="32" y="0" name="inst_7D0AFAAC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_follow" x="0" y="0" name="inst_849473F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tower" x="1728" y="2880" name="inst_33E74A0C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tower" x="2304" y="2880" name="inst_8AEAC92F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tower" x="2688" y="1920" name="inst_2921DC99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tower" x="1344" y="1920" name="inst_7B6E49C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tower" x="672" y="480" name="inst_BFF4CC11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tower" x="3360" y="480" name="inst_8847100F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tower" x="1632" y="3360" name="inst_198A099E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tower" x="2400" y="3360" name="inst_30FDE391" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy" x="288" y="3648" name="inst_FFEEAE35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tl_road" x="2304" y="192" w="192" h="192" xo="0" yo="0" id="10000178" name="inst_F79C18EB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -136,7 +145,7 @@
     <tile bgName="tl_road" x="2880" y="2496" w="192" h="192" xo="0" yo="0" id="10000448" name="inst_0374FB19" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tl_road" x="3648" y="2880" w="192" h="192" xo="0" yo="0" id="10000449" name="inst_5C20AB32" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tl_road" x="3456" y="2880" w="192" h="192" xo="0" yo="0" id="10000450" name="inst_E9AF0C23" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="3264" y="2880" w="192" h="192" xo="0" yo="0" id="10000451" name="inst_A098D6F5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tl_road" x="3360" y="2880" w="192" h="192" xo="0" yo="0" id="10000451" name="inst_A098D6F5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tl_road" x="3264" y="2688" w="192" h="192" xo="0" yo="0" id="10000452" name="inst_1D753F4D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tl_road" x="3264" y="2496" w="192" h="192" xo="0" yo="0" id="10000453" name="inst_7BD3EE3E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tl_road" x="192" y="2304" w="192" h="192" xo="0" yo="0" id="10000454" name="inst_56EC4902" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
