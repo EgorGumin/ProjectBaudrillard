@@ -202,7 +202,7 @@ if instance_exists(near_tow) &amp;&amp; (point_distance(x,y,near_tow.x, near_tow
     draw_sprite_ext(spr_rainbow,-1,x,y,rainbow_width,1,point_direction(x,y,near_tow.x, near_tow.y),c_white,1)
 }
 
-healthbar_top = 15;
+healthbar_top = -10;
 healthbar_height = 5;
 draw_self();
 draw_healthbar(x - sprite_get_width(sprite_index)/4, y - sprite_get_height(sprite_index)/2 - healthbar_top, x + sprite_get_width(sprite_index)/4, y - sprite_get_height(sprite_index)/2 - healthbar_top + healthbar_height, hp/max_hp*100,c_black, c_red, c_green, 0,true, true)
