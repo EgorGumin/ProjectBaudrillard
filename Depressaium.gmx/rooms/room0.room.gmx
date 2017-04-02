@@ -31,7 +31,7 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="map" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -65,140 +65,9 @@
     <instance objName="obj_spawner_3" x="384" y="1728" name="inst_C4E24EA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spawner_5" x="192" y="3648" name="inst_31631D25" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spawner_6" x="3648" y="3648" name="inst_5E27608A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_road" x="0" y="0" name="inst_60887976" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
-  <tiles>
-    <tile bgName="tl_road" x="2304" y="192" w="192" h="192" xo="0" yo="0" id="10000178" name="inst_F79C18EB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="2496" y="192" w="192" h="192" xo="0" yo="0" id="10000179" name="inst_C9D4960F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="2688" y="192" w="192" h="192" xo="0" yo="0" id="10000180" name="inst_4D4CCF1E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="2880" y="192" w="192" h="192" xo="0" yo="0" id="10000181" name="inst_08B2DEC7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="3072" y="192" w="192" h="192" xo="0" yo="0" id="10000182" name="inst_2C6E496C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="3264" y="192" w="192" h="192" xo="0" yo="0" id="10000183" name="inst_05B84756" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="3456" y="192" w="192" h="192" xo="0" yo="0" id="10000184" name="inst_263597B9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="3456" y="384" w="192" h="192" xo="0" yo="0" id="10000185" name="inst_72D2450E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="3456" y="576" w="192" h="192" xo="0" yo="0" id="10000186" name="inst_FB202AB8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="3264" y="576" w="192" h="192" xo="0" yo="0" id="10000187" name="inst_E9EE3A1A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="3072" y="576" w="192" h="192" xo="0" yo="0" id="10000188" name="inst_0169825C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="2880" y="576" w="192" h="192" xo="0" yo="0" id="10000189" name="inst_9FE41013" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="2688" y="576" w="192" h="192" xo="0" yo="0" id="10000190" name="inst_F9B1C87D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="2496" y="576" w="192" h="192" xo="0" yo="0" id="10000191" name="inst_13E803CA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="2496" y="768" w="192" h="192" xo="0" yo="0" id="10000192" name="inst_789B906F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1536" y="192" w="192" h="192" xo="0" yo="0" id="10000198" name="inst_ACBAEE0D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1344" y="192" w="192" h="192" xo="0" yo="0" id="10000199" name="inst_A3DD5094" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1152" y="192" w="192" h="192" xo="0" yo="0" id="10000200" name="inst_ADF3E0C8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="960" y="192" w="192" h="192" xo="0" yo="0" id="10000201" name="inst_8C811EA0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="768" y="192" w="192" h="192" xo="0" yo="0" id="10000202" name="inst_180CAEA2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="576" y="192" w="192" h="192" xo="0" yo="0" id="10000203" name="inst_D3958622" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="576" y="576" w="192" h="192" xo="0" yo="0" id="10000213" name="inst_2AD0CDBB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="768" y="576" w="192" h="192" xo="0" yo="0" id="10000214" name="inst_977D085D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="960" y="576" w="192" h="192" xo="0" yo="0" id="10000215" name="inst_52976AE7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1152" y="576" w="192" h="192" xo="0" yo="0" id="10000216" name="inst_F1AF8B83" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1344" y="576" w="192" h="192" xo="0" yo="0" id="10000217" name="inst_83A58501" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1344" y="768" w="192" h="192" xo="0" yo="0" id="10000218" name="inst_63673EFC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="384" y="192" w="192" h="192" xo="0" yo="0" id="10000222" name="inst_2ED8335F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="384" y="384" w="192" h="192" xo="0" yo="0" id="10000223" name="inst_37EE95BF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="384" y="576" w="192" h="192" xo="0" yo="0" id="10000224" name="inst_88DCF6EC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1920" y="1152" w="192" h="192" xo="0" yo="0" id="10000226" name="inst_0A716BF8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="384" y="768" w="192" h="192" xo="0" yo="0" id="10000353" name="inst_B44293D1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="384" y="960" w="192" h="192" xo="0" yo="0" id="10000354" name="inst_2BE07D18" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="384" y="1152" w="192" h="192" xo="0" yo="0" id="10000355" name="inst_67B49C08" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="384" y="1344" w="192" h="192" xo="0" yo="0" id="10000356" name="inst_DE1A73C2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="3456" y="768" w="192" h="192" xo="0" yo="0" id="10000362" name="inst_05684773" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="3456" y="960" w="192" h="192" xo="0" yo="0" id="10000363" name="inst_7B0DF727" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="3456" y="1152" w="192" h="192" xo="0" yo="0" id="10000364" name="inst_430B36F1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1536" y="1728" w="192" h="192" xo="0" yo="0" id="10000373" name="inst_C69C2DFF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="2304" y="768" w="192" h="192" xo="0" yo="0" id="10000383" name="inst_03E98EA5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1536" y="768" w="192" h="192" xo="0" yo="0" id="10000384" name="inst_75B6E1C7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1728" y="768" w="192" h="192" xo="0" yo="0" id="10000385" name="inst_584387DE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1920" y="768" w="192" h="192" xo="0" yo="0" id="10000386" name="inst_BA6B5AD5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="2112" y="768" w="192" h="192" xo="0" yo="0" id="10000387" name="inst_784BA9B8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1920" y="960" w="192" h="192" xo="0" yo="0" id="10000388" name="inst_5A04AE89" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="2112" y="1344" w="192" h="192" xo="0" yo="0" id="10000389" name="inst_E86731F2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="2304" y="1344" w="192" h="192" xo="0" yo="0" id="10000390" name="inst_E5BAB72C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1920" y="1344" w="192" h="192" xo="0" yo="0" id="10000391" name="inst_E243A4C6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1728" y="1344" w="192" h="192" xo="0" yo="0" id="10000392" name="inst_F6FF3B1A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1536" y="1344" w="192" h="192" xo="0" yo="0" id="10000393" name="inst_C4D1284E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1536" y="1536" w="192" h="192" xo="0" yo="0" id="10000394" name="inst_FA729D03" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="2304" y="1728" w="192" h="192" xo="0" yo="0" id="10000395" name="inst_4015D3B4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="2304" y="1536" w="192" h="192" xo="0" yo="0" id="10000396" name="inst_7BA7242C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="3456" y="1344" w="192" h="192" xo="0" yo="0" id="10000400" name="inst_3BB36FC3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="3456" y="1536" w="192" h="192" xo="0" yo="0" id="10000401" name="inst_AC5B1550" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="384" y="1536" w="192" h="192" xo="0" yo="0" id="10000402" name="inst_109E050D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1536" y="1920" w="192" h="192" xo="0" yo="0" id="10000419" name="inst_6DBE0FA8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="2304" y="1920" w="192" h="192" xo="0" yo="0" id="10000420" name="inst_8D3D4539" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="384" y="2112" w="192" h="192" xo="0" yo="0" id="10000421" name="inst_70AFF8D0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="576" y="2112" w="192" h="192" xo="0" yo="0" id="10000422" name="inst_D0D8CD02" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="768" y="2112" w="192" h="192" xo="0" yo="0" id="10000423" name="inst_758BE545" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="960" y="2112" w="192" h="192" xo="0" yo="0" id="10000424" name="inst_B78A2761" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1152" y="2112" w="192" h="192" xo="0" yo="0" id="10000425" name="inst_588790B7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1344" y="2112" w="192" h="192" xo="0" yo="0" id="10000426" name="inst_6CD843C8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1536" y="2112" w="192" h="192" xo="0" yo="0" id="10000427" name="inst_86B91C91" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="2304" y="2112" w="192" h="192" xo="0" yo="0" id="10000431" name="inst_D4DB30FC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="2496" y="2112" w="192" h="192" xo="0" yo="0" id="10000432" name="inst_E49CC366" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="2688" y="2112" w="192" h="192" xo="0" yo="0" id="10000433" name="inst_50189A90" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="2880" y="2112" w="192" h="192" xo="0" yo="0" id="10000434" name="inst_388DD3E7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="3072" y="2112" w="192" h="192" xo="0" yo="0" id="10000435" name="inst_19E30F8B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="3264" y="2112" w="192" h="192" xo="0" yo="0" id="10000436" name="inst_9C235A72" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="3456" y="2112" w="192" h="192" xo="0" yo="0" id="10000437" name="inst_58865A21" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="3648" y="2112" w="192" h="192" xo="0" yo="0" id="10000438" name="inst_917BB99B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="192" y="2112" w="192" h="192" xo="0" yo="0" id="10000439" name="inst_E495FBDE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="3648" y="2304" w="192" h="192" xo="0" yo="0" id="10000440" name="inst_40836277" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="3648" y="2496" w="192" h="192" xo="0" yo="0" id="10000441" name="inst_959FD215" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="3648" y="2688" w="192" h="192" xo="0" yo="0" id="10000442" name="inst_60136185" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="3072" y="2496" w="192" h="192" xo="0" yo="0" id="10000446" name="inst_105F2057" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="2880" y="2496" w="192" h="192" xo="0" yo="0" id="10000448" name="inst_0374FB19" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="3648" y="2880" w="192" h="192" xo="0" yo="0" id="10000449" name="inst_5C20AB32" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="3456" y="2880" w="192" h="192" xo="0" yo="0" id="10000450" name="inst_E9AF0C23" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="3360" y="2880" w="192" h="192" xo="0" yo="0" id="10000451" name="inst_A098D6F5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="3264" y="2688" w="192" h="192" xo="0" yo="0" id="10000452" name="inst_1D753F4D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="3264" y="2496" w="192" h="192" xo="0" yo="0" id="10000453" name="inst_7BD3EE3E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="192" y="2304" w="192" h="192" xo="0" yo="0" id="10000454" name="inst_56EC4902" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="192" y="2496" w="192" h="192" xo="0" yo="0" id="10000455" name="inst_D2BE2206" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="192" y="2688" w="192" h="192" xo="0" yo="0" id="10000456" name="inst_63DFA5B4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="192" y="2880" w="192" h="192" xo="0" yo="0" id="10000457" name="inst_296F3993" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="384" y="2880" w="192" h="192" xo="0" yo="0" id="10000458" name="inst_C7C8774D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="576" y="2880" w="192" h="192" xo="0" yo="0" id="10000459" name="inst_C287CDEB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="576" y="2688" w="192" h="192" xo="0" yo="0" id="10000460" name="inst_93EF2136" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="576" y="2496" w="192" h="192" xo="0" yo="0" id="10000461" name="inst_02902054" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="768" y="2496" w="192" h="192" xo="0" yo="0" id="10000462" name="inst_38A0A440" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="960" y="2496" w="192" h="192" xo="0" yo="0" id="10000463" name="inst_0B333B85" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1152" y="2496" w="192" h="192" xo="0" yo="0" id="10000464" name="inst_9DE1367C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1344" y="2496" w="192" h="192" xo="0" yo="0" id="10000465" name="inst_69FC954C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1536" y="2496" w="192" h="192" xo="0" yo="0" id="10000466" name="inst_D5345835" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1728" y="2496" w="192" h="192" xo="0" yo="0" id="10000467" name="inst_3168ED2E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1920" y="2496" w="192" h="192" xo="0" yo="0" id="10000468" name="inst_11A4ED89" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="2112" y="2496" w="192" h="192" xo="0" yo="0" id="10000469" name="inst_32E8F77C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="2304" y="2496" w="192" h="192" xo="0" yo="0" id="10000470" name="inst_B5DD211D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="2496" y="2496" w="192" h="192" xo="0" yo="0" id="10000471" name="inst_84E57089" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="2688" y="2496" w="192" h="192" xo="0" yo="0" id="10000472" name="inst_05BDE5B9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1920" y="2688" w="192" h="192" xo="0" yo="0" id="10000475" name="inst_5305685D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1920" y="2880" w="192" h="192" xo="0" yo="0" id="10000476" name="inst_F7385498" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1920" y="3072" w="192" h="192" xo="0" yo="0" id="10000477" name="inst_FBD6B88E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1728" y="3072" w="192" h="192" xo="0" yo="0" id="10000478" name="inst_760745EF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1536" y="3072" w="192" h="192" xo="0" yo="0" id="10000479" name="inst_5BE9B01A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1344" y="3072" w="192" h="192" xo="0" yo="0" id="10000480" name="inst_99CD07FA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="2112" y="3072" w="192" h="192" xo="0" yo="0" id="10000481" name="inst_DA9CD009" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="2304" y="3072" w="192" h="192" xo="0" yo="0" id="10000482" name="inst_EC1F4BA0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="2496" y="3072" w="192" h="192" xo="0" yo="0" id="10000483" name="inst_462926F9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="2496" y="3456" w="192" h="192" xo="0" yo="0" id="10000487" name="inst_1EF717F1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="2304" y="3456" w="192" h="192" xo="0" yo="0" id="10000488" name="inst_A0F5DECF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="2112" y="3456" w="192" h="192" xo="0" yo="0" id="10000489" name="inst_85AAE4F3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1920" y="3456" w="192" h="192" xo="0" yo="0" id="10000490" name="inst_6CA3E0A7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1728" y="3456" w="192" h="192" xo="0" yo="0" id="10000491" name="inst_9A7E775C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1536" y="3456" w="192" h="192" xo="0" yo="0" id="10000492" name="inst_14E5EB8A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1344" y="3456" w="192" h="192" xo="0" yo="0" id="10000493" name="inst_27AD68E5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1344" y="3264" w="192" h="192" xo="0" yo="0" id="10000494" name="inst_021E5C94" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="2496" y="3264" w="192" h="192" xo="0" yo="0" id="10000495" name="inst_63C6996C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1920" y="3648" w="192" h="192" xo="0" yo="0" id="10000496" name="inst_E729FBC9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="1920" y="3840" w="192" h="192" xo="0" yo="0" id="10000497" name="inst_2BB5E9A3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="" x="3456" y="3456" w="16" h="16" xo="0" yo="0" id="10000514" name="inst_9BEA64B9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="3648" y="3072" w="192" h="192" xo="0" yo="0" id="10000516" name="inst_8296FAE4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="3648" y="3264" w="192" h="192" xo="0" yo="0" id="10000517" name="inst_58F6CF05" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="3648" y="3456" w="192" h="192" xo="0" yo="0" id="10000518" name="inst_B3A80D4A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="192" y="3072" w="192" h="192" xo="0" yo="0" id="10000519" name="inst_5CD1BE2E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="192" y="3264" w="192" h="192" xo="0" yo="0" id="10000520" name="inst_2E45F6FD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="192" y="3456" w="192" h="192" xo="0" yo="0" id="10000521" name="inst_E029AD12" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tl_road" x="3264" y="2880" w="192" h="192" xo="0" yo="0" id="10000522" name="inst_DCB4032B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-  </tiles>
+  <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
   <PhysicsWorldLeft>0</PhysicsWorldLeft>

@@ -9,6 +9,7 @@
     <sound>sound\v_tower_shot</sound>
     <sound>sound\pony_dies</sound>
     <sound>sound\tower_create</sound>
+    <sound>sound\pony_castle</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_left_panel_background</sprite>
@@ -21,6 +22,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\tl_road</background>
+    <background>background\map</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
