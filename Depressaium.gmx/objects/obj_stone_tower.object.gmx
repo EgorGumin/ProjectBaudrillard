@@ -118,6 +118,7 @@ alarm[0] = room_speed/frequency;
 {
     x = mouse_x;
     y = mouse_y;
+    depth = -9999;
 }
 </string>
           </argument>
@@ -142,23 +143,39 @@ alarm[0] = room_speed/frequency;
             <string>if mouse_check_button_pressed(mb_left)
 {
     show_debug_message("pressed")
-    if (obj_left_panel.taken_obj!=noone)
+    if (obj_left_panel.taken_obj != noone)
     {
+            show_debug_message("noone")
             if (!instance_position(mouse_x, mouse_y, obj_road))
             {
+                show_debug_message("no oboj road")
                 var inst;
-                var width = sprite_get_width(spr_vgroup_tower)
-                inst = collision_rectangle(mouse_x-width, mouse_y-width, mouse_x+width, mouse_y+width, obj_tower, false, true);
-                if (inst == noone)
+                var width = 10;
+                xx = mouse_x - mouse_x % (global.tile) + global.tile/2;
+                yy = mouse_y - mouse_y % (global.tile) + global.tile/2;   
+                if (!instance_position(mouse_x, mouse_y, obj_menu_icon))
                 {
-                    x = mouse_x - mouse_x % global.tile;
-                    y = mouse_y - mouse_y % global.tile;
-                    obj_left_panel.taken_obj = noone;
-                    taken = false;
+                    inst = collision_rectangle(xx-width, yy-width, xx+width, yy+width, obj_tower, false, true);             
+                    if (inst==noone)
+                    {
+                        show_debug_message("no_collision")
+                        x = xx
+                        y = yy
+                        obj_left_panel.taken_obj = noone;
+                        taken = false;
+                        depth = 0;
+                    }
                 }
+                else
+                {
+                    with obj_left_panel.taken_obj do instance_destroy();
+                    obj_left_panel.taken_obj = noone;
+                }
+                
             }
     }
 }
+
 </string>
           </argument>
         </arguments>

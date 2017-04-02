@@ -20,6 +20,7 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\makeArr.gml</script>
+    <script>scripts\draw_grid.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\f_arial_16</font>

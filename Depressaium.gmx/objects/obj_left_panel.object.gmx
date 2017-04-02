@@ -88,6 +88,17 @@ elem[1,2] = obj_stone_tower
         }
     }
 }
+
+if mouse_check_button_pressed(mb_right)
+{
+    if (taken_obj != noone)
+    {
+        with obj_left_panel.taken_obj do instance_destroy();
+        obj_left_panel.taken_obj = noone;
+    }
+}
+
+
 </string>
           </argument>
         </arguments>

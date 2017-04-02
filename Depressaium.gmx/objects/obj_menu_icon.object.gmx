@@ -38,7 +38,7 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="6" enumb="7">
+    <event eventtype="6" enumb="4">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -55,13 +55,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(obj_left_panel.hide = 0)
+            <string>if(obj_left_panel.hide == 0)
 {
-obj_left_panel.hide = 1;
+    obj_left_panel.hide = 1;
 }
 else
 {
-obj_left_panel.hide = 0;
+    obj_left_panel.hide = 0;    
 }
 </string>
           </argument>
