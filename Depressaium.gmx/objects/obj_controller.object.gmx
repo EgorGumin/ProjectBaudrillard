@@ -250,7 +250,7 @@ for(var i = 1; i &lt;= 6; i++)
             <kind>1</kind>
             <string>enum unit_type {foot, fly}
 global.tile = 192
-
+taken_object = noone
 </string>
           </argument>
         </arguments>

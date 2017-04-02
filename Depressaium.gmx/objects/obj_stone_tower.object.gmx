@@ -123,6 +123,46 @@ alarm[0] = room_speed/frequency;
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if mouse_check_button_pressed(mb_left)
+{
+    show_debug_message("pressed")
+    if (obj_left_panel.taken_obj!=noone)
+    {
+            if (!instance_position(mouse_x, mouse_y, obj_road))
+            {
+                var inst;
+                var width = sprite_get_width(spr_vgroup_tower)
+                inst = collision_rectangle(mouse_x-width, mouse_y-width, mouse_x+width, mouse_y+width, obj_tower, false, true);
+                if (inst == noone)
+                {
+                    x = mouse_x - mouse_x % global.tile;
+                    y = mouse_y - mouse_y % global.tile;
+                    obj_left_panel.taken_obj = noone;
+                    taken = false;
+                }
+            }
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
   </events>
   <PhysicsObject>0</PhysicsObject>

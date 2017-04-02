@@ -61,7 +61,7 @@
     <instance objName="obj_vgroup_tower" x="1632" y="3360" name="inst_93B97DF4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stone_tower" x="480" y="3456" name="inst_D8321A2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_left_panel" x="0" y="0" name="inst_9D94735A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_road" x="0" y="0" name="inst_2A2219A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_road" x="-192" y="0" name="inst_2A2219A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tl_road" x="2304" y="192" w="192" h="192" xo="0" yo="0" id="10000178" name="inst_F79C18EB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
