@@ -7,18 +7,18 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>14</bbox_left>
-  <bbox_right>242</bbox_right>
+  <bbox_left>18</bbox_left>
+  <bbox_right>306</bbox_right>
   <bbox_top>0</bbox_top>
-  <bbox_bottom>80</bbox_bottom>
+  <bbox_bottom>101</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>262</width>
-  <height>87</height>
+  <width>330</width>
+  <height>109</height>
   <frames>
     <frame index="0">images\spr_mood_0.png</frame>
   </frames>

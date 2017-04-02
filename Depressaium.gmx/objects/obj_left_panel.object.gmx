@@ -95,6 +95,8 @@ elem[2,3] = 50
                     }
                     taken_obj = instance_create(mouse_x,mouse_y,elem[i,2]);
                     taken_obj.taken = true;
+                    show_debug_message("created ")
+                    show_debug_message(taken_obj)
                     hide = 0;
                     obj_road.visible = true;
                 }

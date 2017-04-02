@@ -28,6 +28,7 @@
             <string>enemy_counter = 0;
 cooldown = 5.5;
 alarm[0] = room_speed * cooldown;
+image_speed = 0.30
 </string>
           </argument>
         </arguments>
