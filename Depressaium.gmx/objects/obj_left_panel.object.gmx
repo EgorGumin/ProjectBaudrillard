@@ -39,7 +39,7 @@ max_page = elements_number/items_on_page + elements_number % items_on_page;
 margin = 16;
 text_height = 32;
 text_padding = 12;
-taken_obj = noone;
+taken_obj = -1;
 
 
 elem[0,0] = "Башня народной #дружины" 
@@ -89,14 +89,7 @@ elem[2,3] = 50
             {
                 if (global.mood&gt;=elem[i,3])
                 {
-                    if (taken_obj != noone)
-                    {
-                        with taken_obj do instance_destroy();
-                    }
-                    taken_obj = instance_create(mouse_x,mouse_y,elem[i,2]);
-                    taken_obj.taken = true;
-                    show_debug_message("created ")
-                    show_debug_message(taken_obj)
+                    taken_obj = i;
                     hide = 0;
                     obj_road.visible = true;
                 }
@@ -108,12 +101,45 @@ elem[2,3] = 50
 
 if mouse_check_button_pressed(mb_right)
 {
-    if (taken_obj != noone)
+    if (taken_obj != -1)
     {
-        with obj_left_panel.taken_obj do instance_destroy();
-        obj_left_panel.taken_obj = noone;
+        taken_obj = -1;
     }
 }
+
+
+if mouse_check_button_pressed(mb_left)
+{
+    if (taken_obj != -1)
+    {
+            if (!instance_position(mouse_x, mouse_y, obj_road))
+            {
+                var inst;
+                var width = 10;
+                  
+                if (!instance_position(mouse_x, mouse_y, obj_menu_icon))
+                {
+                    xx = mouse_x - mouse_x % (global.tile) + global.tile/2;
+                    yy = mouse_y - mouse_y % (global.tile) + global.tile/2; 
+                    inst = collision_rectangle(xx-width, yy-width, xx+width, yy+width, obj_tower, false, true);             
+                    if (inst==noone)
+                    {
+                        obj_road.visible = false;  
+                        instance_create(xx,yy,elem[taken_obj,2]); 
+                        global.mood -= elem[taken_obj,3]
+                        taken_obj = -1;
+                    }
+                }
+                else
+                {
+                    obj_road.visible = false;  
+                    taken_obj = -1;
+                }
+                
+            }
+    }
+}
+
 
 </string>
           </argument>
@@ -176,6 +202,11 @@ if (hide == 1)
         draw_set_color(c_black)
         draw_text(text_x, text_y, elem[i,0])      
     }
+}
+
+if (taken_obj!=-1)
+{
+    draw_sprite(elem[taken_obj,1],-1, mouse_x, mouse_y)
 }
 </string>
           </argument>
