@@ -65,6 +65,7 @@
     </objects>
     <objects name="enemies">
       <object>objects\obj_ponyasha</object>
+      <object>objects\obj_zhdun</object>
       <object>objects\obj_nyasha</object>
       <object>objects\obj_enemy</object>
     </objects>

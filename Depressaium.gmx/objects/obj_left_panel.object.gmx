@@ -137,6 +137,8 @@ if mouse_check_button_pressed(mb_right)
 {
     if (taken_obj != -1)
     {
+        hide = 1;
+        obj_road.visible = false;
         taken_obj = -1;
     }
 }
