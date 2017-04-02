@@ -42,19 +42,19 @@ text_padding = 12;
 taken_obj = -1;
 
 
-elem[0,0] = "Башня народной #дружины" 
+elem[0,0] = "Башня народной дружины#" 
 elem[0,1] = spr_vgroup_tower
 elem[0,2] = obj_vgroup_tower
 elem[0,3] = 50
-elem[1,0] ="Башня. Просто#башня"
+elem[1,0] ="Башня. Просто башня#"
 elem[1,1] = spr_stone_tower
 elem[1,2] = obj_stone_tower
 elem[1,3] = 200
-elem[2,0] ="Тучегенератор"
+elem[2,0] ="Тучегенератор#"
 elem[2,1] = spr_tuchegenerator
 elem[2,2] = obj_tuchegenerator
 elem[2,3] = 50
-elem[3,0] ="Красная кнопка"
+elem[3,0] ="Красная кнопка#"
 elem[3,1] = spr_tower_button
 elem[3,2] = obj_tower_button
 elem[3,3] = 500
@@ -206,9 +206,9 @@ if (hide == 1)
         }
         var text_x = spr_x - sprite_get_height(spr_vgroup_tower)/2 + text_padding;
         var text_y = spr_y +  sprite_get_height(spr_vgroup_tower)/2
-        draw_set_font(f_arial_16)
+        draw_set_font(f_arial_24)
         draw_set_color(c_black)
-        draw_text(text_x, text_y, elem[i,0])      
+        draw_text(text_x, text_y, string(elem[i,0])+" Цена:"+string(elem[i,3]))      
     }
 }
 

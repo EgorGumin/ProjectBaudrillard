@@ -69,6 +69,30 @@ can_shoot = true
     <event eventtype="2" enumb="1">
       <action>
         <libid>1</libid>
+        <id>211</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_sound</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>6</kind>
+            <sound>background</sound>
+          </argument>
+          <argument>
+            <kind>3</kind>
+            <string>1</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -187,7 +211,7 @@ else
     state = button_state.push;
     alarm[1] = room_speed * 26; 
     sound_stop(background)
-    sound_play(background)  
+    sound_play(red_btn) 
 }
 </string>
           </argument>
