@@ -80,7 +80,10 @@ alarm[0] = room_speed/frequency;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>can_shoot = true
+            <string>if (!taken)
+{
+    can_shoot = true
+}
 alarm[0] = room_speed/frequency;
 </string>
           </argument>
