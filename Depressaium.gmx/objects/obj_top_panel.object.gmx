@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(400,10,"Население:"+global.population+" Настроение:"+global.mood)
+            <string>//draw_text(400,10,"Население:"+global.population+" Настроение:"+global.mood)
 </string>
           </argument>
         </arguments>
