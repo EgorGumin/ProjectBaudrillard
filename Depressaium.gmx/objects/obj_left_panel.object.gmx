@@ -87,6 +87,7 @@ elem[1,2] = obj_stone_tower
                 taken_obj = instance_create(mouse_x,mouse_y,elem[i,2]);
                 taken_obj.taken = true;
                 hide = 0;
+                obj_road.visible = true;
             }
             
         }
