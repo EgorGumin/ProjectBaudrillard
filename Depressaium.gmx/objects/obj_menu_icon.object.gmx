@@ -64,6 +64,26 @@ else
     obj_left_panel.hide = 0;    
 }
 
+if keyboard_check(ord("e"))
+{
+    with obj_vgroup_tower do
+    {
+        if (taken)
+        {
+                show_debug_message("in tekene")
+              instance_destroy();      
+        }
+    }
+
+    with obj_stone_tower do
+    {
+        if (taken)
+        {
+                        show_debug_message("in tekene")
+            instance_destroy();
+        }
+    }
+}
 </string>
           </argument>
         </arguments>

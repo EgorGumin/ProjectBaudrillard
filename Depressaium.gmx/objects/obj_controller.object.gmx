@@ -355,8 +355,14 @@ global.mood = 200;
           <argument>
             <kind>1</kind>
             <string>draw_set_font(f_arial_16)
-draw_text(400,10,"Население:"+string(global.population)+" Настроение:"+string(global.mood))
 
+draw_sprite(spr_mood, -1, 320,10)
+draw_sprite(spr_population, -1, 320+sprite_get_width(spr_mood),10)
+
+draw_set_color(c_white)
+draw_text(400*1.25 - 30,sprite_get_height(spr_mood)/2,"Население:"+string(global.population))
+draw_text(400+sprite_get_width(spr_mood)*1.25 - 30,sprite_get_height(spr_mood)/2,"Настроение:"+string(global.mood))
+draw_set_color(c_black)
 </string>
           </argument>
         </arguments>
