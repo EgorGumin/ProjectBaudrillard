@@ -49,7 +49,14 @@
             <kind>1</kind>
             <string>healthbar_top = -10;
 healthbar_height = 5;
-draw_self();
+if (shake &gt; 0)
+{
+    draw_sprite_ext(sprite_index, image_index, x + irandom_range(-shake, shake), y + irandom_range(-shake, shake), image_xscale, image_yscale, image_angle, image_blend, image_alpha);
+}
+else
+{
+    draw_self();
+}
 draw_healthbar(x - sprite_get_width(sprite_index)/4, y - sprite_get_height(sprite_index)/2 - healthbar_top, x + sprite_get_width(sprite_index)/4, y - sprite_get_height(sprite_index)/2 - healthbar_top + healthbar_height, hp/max_hp*100,c_black, c_red, c_green, 0,true, true)
 </string>
           </argument>

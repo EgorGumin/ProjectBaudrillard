@@ -33,6 +33,7 @@
     <sprite>sprites\spr_bullet</sprite>
     <sprite>sprites\spr_tuchegenerator</sprite>
     <sprite>sprites\spr_zhdun</sprite>
+    <sprite>sprites\spr_tower_button</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\tl_road</background>
@@ -71,6 +72,7 @@
     </objects>
     <objects name="towers">
       <object>objects\obj_vgroup_tower</object>
+      <object>objects\obj_tower_button</object>
       <object>objects\obj_tuchegenerator</object>
       <object>objects\obj_castle</object>
       <object>objects\obj_stone_tower</object>

@@ -252,7 +252,7 @@ for(var i = 1; i &lt;= 6; i++)
 global.tile = 192
 taken_object = noone
 global.population = 500;
-global.mood = 200;
+global.mood = 1000;
 
 </string>
           </argument>
