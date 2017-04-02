@@ -41,12 +41,15 @@ text_height = 32;
 text_padding = 12;
 taken_obj = noone;
 
+
 elem[0,0] = "Башня народной #дружины" 
 elem[0,1] = spr_vgroup_tower
 elem[0,2] = obj_vgroup_tower
+elem[0,3] = 50
 elem[1,0] ="Башня. Просто#башня"
 elem[1,1] = spr_stone_tower
 elem[1,2] = obj_stone_tower
+elem[1,3] = 200
 </string>
           </argument>
         </arguments>
@@ -80,14 +83,17 @@ elem[1,2] = obj_stone_tower
             if (mouse_x&gt;spr_x &amp;&amp; mouse_x&lt;spr_x+sprite_get_width(spr_vgroup_tower)
             &amp;&amp; mouse_y&gt;spr_y &amp;&amp; mouse_y&lt;spr_y+sprite_get_width(spr_vgroup_tower))
             {
-                if (taken_obj != noone)
+                if (global.mood&gt;=elem[i,3])
                 {
-                    with taken_obj do instance_destroy();
+                    if (taken_obj != noone)
+                    {
+                        with taken_obj do instance_destroy();
+                    }
+                    taken_obj = instance_create(mouse_x,mouse_y,elem[i,2]);
+                    taken_obj.taken = true;
+                    hide = 0;
+                    obj_road.visible = true;
                 }
-                taken_obj = instance_create(mouse_x,mouse_y,elem[i,2]);
-                taken_obj.taken = true;
-                hide = 0;
-                obj_road.visible = true;
             }
             
         }
@@ -146,7 +152,15 @@ if (hide == 1)
     {
         var spr_x = x+sprite_get_width(spr_vgroup_tower)/2;
         var spr_y = y+sprite_get_height(spr_vgroup_tower)/2+i*(sprite_get_height(spr_vgroup_tower)+margin+text_height);
-        draw_sprite(elem[i,1],-1, spr_x , spr_y)
+        var building = elem[i,2]
+        if (global.mood&gt;=elem[i,3])
+        {
+            draw_sprite(elem[i,1],-1, spr_x , spr_y)
+        }
+        else
+        {
+            draw_sprite_ext(elem[i,1], -1, spr_x, spr_y, 1,1,0,c_black,0.7)
+        }
         var text_x = spr_x - sprite_get_height(spr_vgroup_tower)/2 + text_padding;
         var text_y = spr_y +  sprite_get_height(spr_vgroup_tower)/2
         draw_set_font(f_arial_16)

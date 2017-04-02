@@ -189,6 +189,7 @@ alarm[0] = room_speed/frequency;
                         obj_left_panel.taken_obj = noone;
                         taken = false;
                         depth = 0;
+                        global.mood -= cost
                     }
                 }
                 else

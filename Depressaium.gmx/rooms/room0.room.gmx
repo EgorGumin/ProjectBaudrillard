@@ -193,6 +193,7 @@
     <tile bgName="tl_road" x="192" y="3072" w="192" h="192" xo="0" yo="0" id="10000519" name="inst_5CD1BE2E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tl_road" x="192" y="3264" w="192" h="192" xo="0" yo="0" id="10000520" name="inst_2E45F6FD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tl_road" x="192" y="3456" w="192" h="192" xo="0" yo="0" id="10000521" name="inst_E029AD12" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tl_road" x="3264" y="2880" w="192" h="192" xo="0" yo="0" id="10000522" name="inst_DCB4032B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
