@@ -50,7 +50,7 @@
             <string>healthbar_top = 15;
 healthbar_height = 5;
 draw_self();
-draw_healthbar(x - sprite_get_width(sprite_index)/2, y - sprite_get_height(sprite_index)/2 - healthbar_top, x + sprite_get_width(sprite_index), y - sprite_get_height(sprite_index)/2 - healthbar_top + healthbar_height, hp/max_hp*100,c_black, c_red, c_green, 0,true, true)
+draw_healthbar(x - sprite_get_width(sprite_index)/4, y - sprite_get_height(sprite_index)/2 - healthbar_top, x + sprite_get_width(sprite_index)/4, y - sprite_get_height(sprite_index)/2 - healthbar_top + healthbar_height, hp/max_hp*100,c_black, c_red, c_green, 0,true, true)
 </string>
           </argument>
         </arguments>

@@ -19,6 +19,13 @@
     <sprite>sprites\spr_castle</sprite>
     <sprite>sprites\spr_stone_tower</sprite>
     <sprite>sprites\sprite6_test</sprite>
+    <sprite>sprites\spr_ponysha_right</sprite>
+    <sprite>sprites\spr_ponysha_left</sprite>
+    <sprite>sprites\spr_ponysha_front</sprite>
+    <sprite>sprites\spr_nyasha_left</sprite>
+    <sprite>sprites\spr_nyasha_right</sprite>
+    <sprite>sprites\spr_nyasha_front</sprite>
+    <sprite>sprites\spr_rainbow</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\tl_road</background>
@@ -28,6 +35,7 @@
   <scripts name="scripts">
     <script>scripts\makeArr.gml</script>
     <script>scripts\draw_grid.gml</script>
+    <script>scripts\scr_spawner_alarm.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\f_arial_16</font>

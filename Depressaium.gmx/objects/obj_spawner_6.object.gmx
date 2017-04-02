@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>cooldown = 3;
+            <string>enemy_counter = 0;
+cooldown = 3;
 alarm[0] = room_speed * cooldown;
 </string>
           </argument>
@@ -49,12 +50,7 @@ alarm[0] = room_speed * cooldown;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>iii = instance_create(x, y - 100, obj_ponyasha)
-with iii do
-{
-    path_start(global.path[5], spd, path_action_stop, 1)
-}
-alarm[0] = room_speed*cooldown;
+            <string>scr_spawner_alarm();
 </string>
           </argument>
         </arguments>
