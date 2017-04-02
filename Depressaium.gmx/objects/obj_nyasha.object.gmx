@@ -31,8 +31,8 @@ attack = 3
 attack_distance = 250
 attack_time = 3
 reward = 30
-hp = 15
-max_hp = 15
+hp = 20
+max_hp = 20
 rainbow_width = 0;
 
 can_shoot = false

@@ -11,5 +11,5 @@ with iii do
 {
     path_start(global.path[sp_num], spd, path_action_stop, 1)
 }
-alarm[0] = room_speed*cooldown;
+alarm[0] = room_speed * cooldown;
 enemy_counter+=1;
