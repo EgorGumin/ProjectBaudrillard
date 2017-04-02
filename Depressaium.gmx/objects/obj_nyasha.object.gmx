@@ -118,6 +118,38 @@ if (can_shoot == true)
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>tg = instance_nearest(x,y,obj_tuchegenerator)
+if instance_exists(tg)
+{
+    if (point_distance(x,y,tg.x,tg.y)&lt;tg.radius/100*global.tile)
+    {
+        path_speed = spd/3;
+    }
+    else
+    {
+        path_speed = spd;
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="4" ename="obj_bullet">
       <action>
