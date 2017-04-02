@@ -251,6 +251,8 @@ for(var i = 1; i &lt;= 6; i++)
             <string>enum unit_type {foot, fly}
 global.tile = 192
 taken_object = noone
+global.population = 5000;
+global.mood = 0;
 </string>
           </argument>
         </arguments>

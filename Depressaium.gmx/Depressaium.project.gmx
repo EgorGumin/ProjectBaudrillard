@@ -33,6 +33,7 @@
   <objects name="objects">
     <objects name="insterfacecont">
       <object>objects\obj_left_panel</object>
+      <object>objects\obj_top_panel</object>
       <object>objects\obj_controller</object>
       <object>objects\obj_menu_icon</object>
       <object>objects\obj_follow</object>
@@ -53,7 +54,6 @@
     </objects>
     <object>objects\obj_bullet</object>
     <object>objects\obj_road</object>
-    <object>objects\object15</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

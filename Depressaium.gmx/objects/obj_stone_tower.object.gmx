@@ -182,6 +182,7 @@ alarm[0] = room_speed/frequency;
                     inst = collision_rectangle(xx-width, yy-width, xx+width, yy+width, obj_tower, false, true);             
                     if (inst==noone)
                     {
+                        obj_road.visible = false;  
                         show_debug_message("no_collision")
                         x = xx
                         y = yy
@@ -192,6 +193,7 @@ alarm[0] = room_speed/frequency;
                 }
                 else
                 {
+                    obj_road.visible = false;  
                     with obj_left_panel.taken_obj do instance_destroy();
                     obj_left_panel.taken_obj = noone;
                 }

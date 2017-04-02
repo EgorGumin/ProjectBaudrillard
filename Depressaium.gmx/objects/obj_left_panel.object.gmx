@@ -151,9 +151,7 @@ if (hide == 1)
         var text_y = spr_y +  sprite_get_height(spr_vgroup_tower)/2
         draw_set_font(f_arial_16)
         draw_set_color(c_black)
-        draw_text(text_x, text_y, elem[i,0])
-        draw_set_color(c_white)
-        
+        draw_text(text_x, text_y, elem[i,0])      
     }
 }
 </string>
