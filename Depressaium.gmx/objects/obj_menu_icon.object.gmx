@@ -63,6 +63,14 @@ else
 {
     obj_left_panel.hide = 0;    
 }
+
+with obj_tower do 
+{
+    if (y==mouse_y &amp;&amp; x == mouse_x)
+    {
+        instance_destroy();
+    }   
+}
 </string>
           </argument>
         </arguments>

@@ -80,6 +80,10 @@ elem[1,2] = obj_stone_tower
             if (mouse_x&gt;spr_x &amp;&amp; mouse_x&lt;spr_x+sprite_get_width(spr_vgroup_tower)
             &amp;&amp; mouse_y&gt;spr_y &amp;&amp; mouse_y&lt;spr_y+sprite_get_width(spr_vgroup_tower))
             {
+                if (taken_obj != noone)
+                {
+                    with taken_obj do instance_destroy();
+                }
                 taken_obj = instance_create(mouse_x,mouse_y,elem[i,2]);
                 taken_obj.taken = true;
                 hide = 0;
@@ -97,7 +101,6 @@ if mouse_check_button_pressed(mb_right)
         obj_left_panel.taken_obj = noone;
     }
 }
-
 
 </string>
           </argument>
