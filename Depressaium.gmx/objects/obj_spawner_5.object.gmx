@@ -50,7 +50,7 @@ alarm[0] = room_speed * cooldown;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_spawner_alarm()
+            <string>scr_spawner_alarm(5)
 </string>
           </argument>
         </arguments>

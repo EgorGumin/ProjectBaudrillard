@@ -29,7 +29,7 @@
 type = unit_type.foot;
 attack = 2
 attack_distance = 300
-attack_time = 2
+attack_time = 4
 reward = 20
 hp = 15
 max_hp = 15
@@ -104,7 +104,7 @@ if (can_shoot == true)
     {
         if (rainbow_width &lt;= point_distance(x,y,near_tow.x, near_tow.y)/sprite_get_width(spr_rainbow))
         {
-            rainbow_width += attack_time;
+            rainbow_width += 1/attack_time;
         }
         else
         {

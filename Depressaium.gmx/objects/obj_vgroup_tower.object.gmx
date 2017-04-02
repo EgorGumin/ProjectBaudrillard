@@ -28,7 +28,8 @@
             <string>attack = 1
 frequency = 1
 durability = 30
-max_durablity = 30
+max_durability = 30
+hp_restoring = 0.01
 radius = 150
 cost = 50
 

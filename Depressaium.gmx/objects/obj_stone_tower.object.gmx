@@ -28,9 +28,10 @@
             <string>attack = 4
 frequency = 1.5
 durability = 80
-max_durablity = 80
+max_durability = 80
 radius = 200
 cost = 200
+hp_restoring = 0.05
 
 taken = false;
 can_shoot = false
