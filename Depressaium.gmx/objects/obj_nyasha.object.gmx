@@ -25,12 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>spd = 5
+            <string>spd = 4
 type = unit_type.foot;
-attack = 2
-attack_distance = 300
-attack_time = 4
-reward = 20
+attack = 3
+attack_distance = 250
+attack_time = 3
+reward = 30
 hp = 15
 max_hp = 15
 rainbow_width = 0;

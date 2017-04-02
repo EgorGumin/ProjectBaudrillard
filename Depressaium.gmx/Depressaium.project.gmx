@@ -30,6 +30,7 @@
     <sprite>sprites\spr_portal_right</sprite>
     <sprite>sprites\spr_mood</sprite>
     <sprite>sprites\spr_population</sprite>
+    <sprite>sprites\spr_bullet</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\tl_road</background>

@@ -172,6 +172,7 @@ alarm[0] = room_speed/frequency;
             <string>if mouse_check_button_pressed(mb_left)
 {
     show_debug_message("pressed")
+    show_debug_message(obj_left_panel.taken_obj)
     if (obj_left_panel.taken_obj != noone)
     {
             show_debug_message("noone")
@@ -180,26 +181,30 @@ alarm[0] = room_speed/frequency;
                 show_debug_message("no oboj road")
                 var inst;
                 var width = 10;
-                xx = mouse_x - mouse_x % (global.tile) + global.tile/2;
-                yy = mouse_y - mouse_y % (global.tile) + global.tile/2;   
+                  
                 if (!instance_position(mouse_x, mouse_y, obj_menu_icon))
                 {
+                    xx = mouse_x - mouse_x % (global.tile) + global.tile/2;
+                    yy = mouse_y - mouse_y % (global.tile) + global.tile/2; 
                     inst = collision_rectangle(xx-width, yy-width, xx+width, yy+width, obj_tower, false, true);             
                     if (inst==noone)
                     {
-                        obj_road.visible = false;                        
+                        obj_road.visible = false;  
                         show_debug_message("no_collision")
                         x = xx
                         y = yy
                         obj_left_panel.taken_obj = noone;
                         taken = false;
-                        global.mood -= cost;
                         depth = 0;
+                        global.mood -= cost
+                    }
+                    else{
+                        show_debug_message("collision");
                     }
                 }
                 else
                 {
-                    obj_road.visible = false;   
+                    obj_road.visible = false;  
                     with obj_left_panel.taken_obj do instance_destroy();
                     obj_left_panel.taken_obj = noone;
                 }

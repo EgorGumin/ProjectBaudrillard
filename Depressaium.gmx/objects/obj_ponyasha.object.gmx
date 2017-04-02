@@ -25,10 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>spd = 5
+            <string>spd = 4
 type = unit_type.foot;
 atack = 0
-reward = 10
+reward = 15
 hp = 10
 max_hp = 10
 

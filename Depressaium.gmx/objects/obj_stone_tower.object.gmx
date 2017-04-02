@@ -25,13 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>attack = 4
+            <string>attack = 3
 frequency = 1.5
-durability = 80
-max_durability = 80
+durability = 70
+max_durability = 70
 radius = 200
-cost = 200
-hp_restoring = 0.05
+cost = 250
+hp_restoring = 0.02
 
 taken = false;
 can_shoot = false
@@ -172,6 +172,7 @@ alarm[0] = room_speed/frequency;
             <string>if mouse_check_button_pressed(mb_left)
 {
     show_debug_message("pressed")
+    show_debug_message(obj_left_panel.taken_obj)
     if (obj_left_panel.taken_obj != noone)
     {
             show_debug_message("noone")
@@ -180,10 +181,11 @@ alarm[0] = room_speed/frequency;
                 show_debug_message("no oboj road")
                 var inst;
                 var width = 10;
-                xx = mouse_x - mouse_x % (global.tile) + global.tile/2;
-                yy = mouse_y - mouse_y % (global.tile) + global.tile/2;   
+                  
                 if (!instance_position(mouse_x, mouse_y, obj_menu_icon))
                 {
+                    xx = mouse_x - mouse_x % (global.tile) + global.tile/2;
+                    yy = mouse_y - mouse_y % (global.tile) + global.tile/2; 
                     inst = collision_rectangle(xx-width, yy-width, xx+width, yy+width, obj_tower, false, true);             
                     if (inst==noone)
                     {
@@ -195,6 +197,9 @@ alarm[0] = room_speed/frequency;
                         taken = false;
                         depth = 0;
                         global.mood -= cost
+                    }
+                    else{
+                        show_debug_message("collision");
                     }
                 }
                 else
