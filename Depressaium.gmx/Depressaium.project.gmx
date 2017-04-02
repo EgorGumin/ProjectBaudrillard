@@ -40,6 +40,11 @@
     </objects>
     <objects name="spawners">
       <object>objects\obj_spawner_5</object>
+      <object>objects\obj_spawner_4</object>
+      <object>objects\obj_spawner_3</object>
+      <object>objects\obj_spawner_2</object>
+      <object>objects\obj_spawner_1</object>
+      <object>objects\obj_spawner_6</object>
     </objects>
     <objects name="enemies">
       <object>objects\obj_ponyasha</object>
