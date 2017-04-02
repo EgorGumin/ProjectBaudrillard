@@ -32,8 +32,8 @@ hide = 0; // hide equal 0 is show, 1 is hide... when hide = 1 we will call the c
 width = sprite_get_width(spr_left_panel_background); // get the width of obj_left_panel
 instance_create(x + width ,y + 32,obj_menu_icon); // create object obj_menu_icon right beside the panel
 
-elements_number = 2;
-items_on_page = 2;
+elements_number = 3;
+items_on_page = 3;
 current_page = 1;
 max_page = elements_number/items_on_page + elements_number % items_on_page;
 margin = 16;
@@ -49,7 +49,11 @@ elem[0,3] = 50
 elem[1,0] ="Башня. Просто#башня"
 elem[1,1] = spr_stone_tower
 elem[1,2] = obj_stone_tower
-elem[1,3] = 200
+elem[1,3] = 250
+elem[2,0] ="Тучегенератор"
+elem[2,1] = spr_tuchegenerator
+elem[2,2] = obj_tuchegenerator
+elem[2,3] = 50
 </string>
           </argument>
         </arguments>
