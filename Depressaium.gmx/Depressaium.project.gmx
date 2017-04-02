@@ -28,6 +28,8 @@
     <sprite>sprites\spr_rainbow</sprite>
     <sprite>sprites\spr_portal_left</sprite>
     <sprite>sprites\spr_portal_right</sprite>
+    <sprite>sprites\spr_mood</sprite>
+    <sprite>sprites\spr_population</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\tl_road</background>
