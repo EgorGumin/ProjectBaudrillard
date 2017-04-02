@@ -27,8 +27,7 @@
             <kind>1</kind>
             <string>if (global.population&lt;0)
 {
-    show_message("Вы проиграли")
-    game_restart();
+    room_goto(room3);
 }
 </string>
           </argument>

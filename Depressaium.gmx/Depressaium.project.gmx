@@ -35,6 +35,7 @@
     <sprite>sprites\spr_tuchegenerator</sprite>
     <sprite>sprites\spr_zhdun</sprite>
     <sprite>sprites\spr_tower_button</sprite>
+    <sprite>sprites\spr_game_end</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\tl_road</background>
@@ -50,6 +51,7 @@
   <fonts name="fonts">
     <font>fonts\f_arial_16</font>
     <font>fonts\f_arial_24</font>
+    <font>fonts\f_arial_48</font>
   </fonts>
   <objects name="objects">
     <objects name="insterfacecont">
@@ -84,10 +86,12 @@
     <object>objects\obj_bullet</object>
     <object>objects\obj_road</object>
     <object>objects\obj_menu_contr</object>
+    <object>objects\obj_game_end</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
     <room>rooms\room0</room>
+    <room>rooms\room3</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
