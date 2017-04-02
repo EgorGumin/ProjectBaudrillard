@@ -356,12 +356,12 @@ global.mood = 900;
             <kind>1</kind>
             <string>draw_set_font(f_arial_16)
 
-draw_sprite(spr_population, -1, 340, 10)
-draw_sprite(spr_mood, -1, 340 + sprite_get_width(spr_population), 10)
+draw_sprite(spr_population, -1, 340+100, 10)
+draw_sprite(spr_mood, -1, 340+100 + sprite_get_width(spr_population), 10)
 
 draw_set_color(c_white)
-draw_text(400*1.25 - 38 ,sprite_get_height(spr_mood)/2 - 5,"Население: "+string(global.population))
-draw_text(400+sprite_get_width(spr_mood)*1.25 - 32,sprite_get_height(spr_mood)/2 - 5,"Настроение: "+string(global.mood))
+draw_text(400*1.25 - 38+100,sprite_get_height(spr_mood)/2 - 5,"Население: "+string(global.population))
+draw_text(400+sprite_get_width(spr_mood)*1.25 - 32+100,sprite_get_height(spr_mood)/2 - 5,"Настроение: "+string(global.mood))
 draw_set_color(c_black)
 </string>
           </argument>

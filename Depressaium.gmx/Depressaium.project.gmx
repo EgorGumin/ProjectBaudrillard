@@ -39,6 +39,7 @@
   <backgrounds name="background">
     <background>background\tl_road</background>
     <background>background\map</background>
+    <background>background\bg_dedok</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -82,8 +83,10 @@
     </objects>
     <object>objects\obj_bullet</object>
     <object>objects\obj_road</object>
+    <object>objects\obj_menu_contr</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room1</room>
     <room>rooms\room0</room>
   </rooms>
   <help>
