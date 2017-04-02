@@ -82,10 +82,7 @@ alarm[0] = room_speed/frequency;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!taken)
-{
-    can_shoot = true
-}
+            <string>can_shoot = true
 alarm[0] = room_speed/frequency;
 </string>
           </argument>
@@ -123,96 +120,6 @@ alarm[0] = room_speed/frequency;
         }
     }
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if taken == true
-{
-    x = mouse_x;
-    y = mouse_y;
-    depth = -9999;
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if mouse_check_button_pressed(mb_left)
-{
-    show_debug_message("pressed")
-    show_debug_message(obj_left_panel.taken_obj)
-    if (obj_left_panel.taken_obj != noone)
-    {
-            show_debug_message("noone")
-            if (!instance_position(mouse_x, mouse_y, obj_road))
-            {
-                show_debug_message("no oboj road")
-                var inst;
-                var width = 10;
-                  
-                if (!instance_position(mouse_x, mouse_y, obj_menu_icon))
-                {
-                    xx = mouse_x - mouse_x % (global.tile) + global.tile/2;
-                    yy = mouse_y - mouse_y % (global.tile) + global.tile/2; 
-                    inst = collision_rectangle(xx-width, yy-width, xx+width, yy+width, obj_tower, false, true);             
-                    if (inst==noone)
-                    {
-                        obj_road.visible = false;  
-                        show_debug_message("no_collision")
-                        x = xx
-                        y = yy
-                        obj_left_panel.taken_obj = noone;
-                        taken = false;
-                        depth = 0;
-                        global.mood -= cost
-                    }
-                    else{
-                        show_debug_message("collision");
-                    }
-                }
-                else
-                {
-                    obj_road.visible = false;  
-                    with obj_left_panel.taken_obj do instance_destroy();
-                    obj_left_panel.taken_obj = noone;
-                }
-                
-            }
-    }
-}
-
 </string>
           </argument>
         </arguments>
