@@ -76,39 +76,7 @@ elem[2,3] = 50
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (hide == 1)
-{
-    for (var i = 0; i &lt; items_on_page; i++)
-    {
-        if mouse_check_button_pressed(mb_left)
-        {
-            var spr_x = x;
-            var spr_y = y+i*(sprite_get_height(spr_vgroup_tower)+margin+text_height);
-            if (mouse_x&gt;spr_x &amp;&amp; mouse_x&lt;spr_x+sprite_get_width(spr_vgroup_tower)
-            &amp;&amp; mouse_y&gt;spr_y &amp;&amp; mouse_y&lt;spr_y+sprite_get_width(spr_vgroup_tower))
-            {
-                if (global.mood&gt;=elem[i,3])
-                {
-                    taken_obj = i;
-                    hide = 0;
-                    obj_road.visible = true;
-                }
-            }
-            
-        }
-    }
-}
-
-if mouse_check_button_pressed(mb_right)
-{
-    if (taken_obj != -1)
-    {
-        taken_obj = -1;
-    }
-}
-
-
-if mouse_check_button_pressed(mb_left)
+            <string>if mouse_check_button_pressed(mb_left)
 {
     if (taken_obj != -1)
     {
@@ -139,6 +107,40 @@ if mouse_check_button_pressed(mb_left)
             }
     }
 }
+
+
+
+if (hide == 1)
+{
+    for (var i = 0; i &lt; items_on_page; i++)
+    {
+        if mouse_check_button_pressed(mb_left)
+        {
+            var spr_x = x;
+            var spr_y = y+i*(sprite_get_height(spr_vgroup_tower)+margin+text_height);
+            if (mouse_x&gt;spr_x &amp;&amp; mouse_x&lt;spr_x+sprite_get_width(spr_vgroup_tower)
+            &amp;&amp; mouse_y&gt;spr_y &amp;&amp; mouse_y&lt;spr_y+sprite_get_width(spr_vgroup_tower))
+            {
+                if (global.mood&gt;=elem[i,3])
+                {
+                    taken_obj = i;
+                    hide = 0;
+                    obj_road.visible = true;
+                }
+            }
+            
+        }
+    }
+}
+
+if mouse_check_button_pressed(mb_right)
+{
+    if (taken_obj != -1)
+    {
+        taken_obj = -1;
+    }
+}
+
 
 
 </string>
