@@ -17,8 +17,8 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>492</width>
-  <height>768</height>
+  <width>738</width>
+  <height>1152</height>
   <frames>
     <frame index="0">images\spr_left_panel_background_0.png</frame>
   </frames>

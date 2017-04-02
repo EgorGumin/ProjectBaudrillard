@@ -29,8 +29,8 @@
 type = unit_type.foot;
 atack = 0
 reward = 50
-hp = 100
-max_hp = 100
+hp = 90
+max_hp = 90
 image_speed = 0.125
 
 shake = 0;

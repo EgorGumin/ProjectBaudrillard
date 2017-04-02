@@ -29,9 +29,9 @@
 type = unit_type.foot;
 atack = 0
 reward = 15
-hp = 15
-max_hp = 15
 shake = 0;
+hp = 13
+max_hp = 13
 
 </string>
           </argument>

@@ -1,15 +1,17 @@
 var sp_num = argument0;
-if (enemy_counter % 3 && enemy_counter > 5)
+
+if ((enemy_counter % 5 == 0) && (enemy_counter > 5))
+{
+    iii = instance_create(x, y -100, obj_zhdun);
+}
+else if ((enemy_counter % 3 == 0) && (enemy_counter > 5))
 {
     iii = instance_create(x, y - 100, obj_nyasha)
 }
-else if (enemy_counter % 2 )
-{
-    iii = instance_create(x, y - 100, obj_ponyasha)
-}
+
 else
 {
-    iii = instance_create(x, y -100, obj_zhdun);
+    iii = instance_create(x, y - 100, obj_ponyasha)
 }
 
 with iii do
