@@ -25,37 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*surf = surface_create(room_width, room_height);
-surface_set_target(surf);
-
-var tiles = tile_get_ids();
-for(var i = 0; i &lt; array_length_1d(tiles); i++){
-    draw_background_part(tile_get_background(tiles[i]), tile_get_left(tiles[i]), tile_get_top(tiles[i]), tile_get_width(tiles[i]), tile_get_height(tiles[i]), tile_get_x(tiles[i]), tile_get_y(tiles[i]));
-}
-
-surface_reset_target();
-surface_save(surf, "test.png");
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>path_x[1] = 480
+            <string>///PATH POINTS
+path_x[1] = 480
 path_y[1] = 288
 
 path_x[2] = 1632
@@ -182,7 +153,8 @@ path_y[36] = 3936
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>path_arr[1] = makeArr(2, 1, 5, 6, 7, 8, 15, 14, 17, 19, 21, 22, 23, 24, 31, 30, 33, 34, 36);
+            <string>///PATH ARRAYS
+path_arr[1] = makeArr(2, 1, 5, 6, 7, 8, 15, 14, 17, 19, 21, 22, 23, 24, 31, 30, 33, 34, 36);
 
 path_arr[3] = makeArr(12, 5, 6, 7, 8, 15, 14, 17, 19, 21, 22, 23, 24, 31, 30, 33, 34, 36);
 
@@ -213,7 +185,7 @@ path_arr[6] = makeArr(29, 27, 26, 25, 24, 31, 32, 35, 34, 36);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>///PATH ADDING
 for(var i = 1; i &lt;= 6; i++)
 {
     global.path[i] = path_add();
@@ -248,12 +220,12 @@ for(var i = 1; i &lt;= 6; i++)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>enum unit_type {foot, fly}
+            <string>///GLOBAL CONSTANTS
+enum unit_type {foot, fly}
 global.tile = 192
 taken_object = noone
 global.population = 1000;
 global.mood = 900;
-
 </string>
           </argument>
         </arguments>

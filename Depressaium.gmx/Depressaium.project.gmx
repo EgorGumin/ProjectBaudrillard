@@ -42,11 +42,16 @@
     <background>background\map</background>
     <background>background\bg_dedok</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path_forest_sp_1</path>
+  </paths>
   <scripts name="scripts">
     <script>scripts\makeArr.gml</script>
     <script>scripts\draw_grid.gml</script>
     <script>scripts\scr_spawner_alarm.gml</script>
+    <script>scripts\scr_get_tile_map.gml</script>
+    <script>scripts\scr_coord_to_index.gml</script>
+    <script>scripts\scr_index_to_coord.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\f_arial_16</font>
@@ -55,6 +60,7 @@
   </fonts>
   <objects name="objects">
     <objects name="insterfacecont">
+      <object>objects\obj_loader</object>
       <object>objects\obj_left_panel</object>
       <object>objects\obj_top_panel</object>
       <object>objects\obj_controller</object>
@@ -91,6 +97,7 @@
   <rooms name="rooms">
     <room>rooms\room1</room>
     <room>rooms\room0</room>
+    <room>rooms\room4</room>
     <room>rooms\room3</room>
   </rooms>
   <help>
